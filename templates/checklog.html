@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://unpkg.com/twinklecss@1.1.0/twinkle.min.css"/>
+</head>
+<body>
+    <div class="flex p-4 m-6 justify-center">
+        <form  method="POST" action="/auth/login" >
+          <div class="mb-4">
+            <label class="flex justify-center 8px 0 black" for="username">
+              Username
+            </label>
+            <input class="flex justify-center 8px 0 bg-gray black" id="username" name="username" type="text">
+          </div>
+          <div class="mb-6">
+            <label class="flex justify-center 8px 0 black" for="password">
+              Password
+            </label>
+            <input class="flex justify-center 8px 0 bg-gray black" id="password" name="password" type="password">
+          </div>
+          <div class="flex items-center justify-between">
+            <button type="submit" class="width:100% height:40px border:1px 0 black border-radius:5px bg-gray color:gray font-size:16px">
+              Sign In
+            </button>
+          </div>
+        </form>
+      </div>
+</body>
+</html>

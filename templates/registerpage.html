@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<form action="/registernewuser" method="post">
+    <textarea name="username" placeholder="Enter username"></textarea>
+    <textarea name="password" placeholder="Enter password"></textarea>
+    <button type="submit">Register</button>
+
+</form>
+
+{% endblock content %}

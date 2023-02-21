@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+<form action="/login" method="get">
+    <textarea name="logusername" placeholder="Enter Username"></textarea>
+    <textarea name="logpassword" placeholder="Enter Password"></textarea>
+    <button type="submit">Login</button>
+</form>
+<form action="/register" method="post">
+    <textarea name="regusername" placeholder="Register username"></textarea>
+    <textarea name="regpassword" placeholder="Register Password"></textarea>
+    <button type="submit">Register</button>
+</form>
+
+{% endblock content %}
